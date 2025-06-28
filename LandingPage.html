@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>洵兔YUNTU兒童手錶導購中...</title>
+  <!-- GA4 測量 ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06PVB9R9R0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06PVB9R9R0');
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f7f9fb;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>正在為您導向洵兔YUNTU兒童手錶頁面…</h2>
+    <p>請稍候，將自動跳轉至採購頁面</p>
+    <p>若未跳轉，<a id="redirectLink" href="https://myship.7-11.com.tw/general/detail/GM2407059090261">請點此</a></p>
+  </div>
+
+  <script>
+    const redirectUrl = "?utm_source=facebook&utm_medium=ads&utm_campaign=kidwatch&utm_term=兒童手表&utm_content=kidwatch";
+    document.getElementById("redirectLink").href = redirectUrl;
+    setTimeout(() => {
+      window.location.href = redirectUrl;
+    }, 200);
+  </script>
+</body>
+</html>
