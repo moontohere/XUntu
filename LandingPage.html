@@ -36,8 +36,17 @@
   </div>
 
   <script>
-    const redirectUrl = "https://myship.7-11.com.tw/general/detail/GM2407059090261?utm_source=facebook&utm_medium=ads&utm_campaign=kidwatch&utm_term=兒童手表&utm_content=kidwatch";
-    window.location.href = redirectUrl;
+    gtag('event', 'landing_page_viewed', {
+      event_category: 'landing',
+      event_label: 'Kidwatch UTM 導購頁',
+      value: 1
+    });
+
+    const targetURL = "https://myship.7-11.com.tw/general/detail/GM2407059090261?utm_source=facebook&utm_medium=ads&utm_campaign=kidwatch&utm_term=兒童手表&utm_content=kidwatch";
+    document.getElementById("manualLink").href = targetURL;
+    setTimeout(() => {
+      window.location.href = targetURL;
+    }, 5000);
   </script>
 </body>
 </html>
